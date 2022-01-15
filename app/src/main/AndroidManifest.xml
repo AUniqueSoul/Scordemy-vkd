@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.laboontech.scordemy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".videohelper.AdaptiveExoplayer"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_scordemy"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_scordemy"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".phase2.batches.BatchesDetailActivity"></activity>
+        <activity android:name=".activities.MyStoreActivity" />
+        <activity android:name=".activities.TestsExploreActivity" />
+        <activity android:name=".activities.TestDetailActivity" />
+        <activity android:name=".activities.TestsSubListActivity" />
+        <activity android:name=".activities.LiveContentActivity" />
+        <activity android:name=".activities.ebooks.PdfViewerActivity" />
+        <activity android:name=".activities.ebooks.EbookPdfActivity" />
+        <activity android:name=".activities.ebooks.EbookYearsActivity" />
+        <activity android:name=".activities.ebooks.EbookBookSolutionsActivity" />
+        <activity android:name=".activities.ebooks.EbookStreamsActivity" />
+        <activity android:name=".activities.ebooks.EbookClassesActivity" />
+        <activity android:name=".activities.ebooks.EbookActivity" />
+        <activity android:name=".activities.PrivacyPolicyActivity" />
+        <activity
+            android:name=".activities.Razorpay"
+            android:exported="false" />
+        <activity
+            android:name=".activities.newTest.OnlineQuizActivity"
+            android:theme="@style/AppTheme23" />
+        <activity android:name=".activities.report.SubmitActivity" />
+        <activity android:name=".activities.report.ReportActivity" />
+        <activity
+            android:name=".activities.YoutubeVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activities.NotificationActivity" />
+        <activity android:name=".activities.PracticeQuizActivity" />
+        <activity android:name=".activities.EditProfileActivity" />
+        <activity
+            android:name=".activities.VideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.MainContentActivity"
+            android:theme="@style/AppTheme23" />
+        <activity
+            android:name=".activities.FeedContentsActivity"
+            android:theme="@style/AppTheme23" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.OtpActivity"
+            android:theme="@style/AppTheme23" />
+        <activity
+            android:name=".activities.LogRegActivity"
+            android:theme="@style/AppTheme23" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.laboontech.scordemy.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

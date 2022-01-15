@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".phase2.batches.BatchesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_curve"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:orientation="horizontal">
+      <EditText
+         android:layout_margin="20dp"
+          android:layout_width="300dp"
+          android:hint="@string/search_batches"
+          android:layout_height="wrap_content"
+          android:background="@drawable/bg_white"
+          android:id="@+id/searchBatches"
+          android:drawableRight="@drawable/ic_search"
+          android:padding="@dimen/_10sdp"
+          />
+            <ImageButton
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_filter"
+                android:padding="@dimen/_10sdp"
+                android:background="@color/gray_light"
+                />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_my_batches"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_batches"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginStart="10dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvMyBatches"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/item_batches"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyt_highly_recommended"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/highly_recommended"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginStart="10dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvHighlyRecommended"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/item_batches"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyt_all_batches"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_batches"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginStart="10dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvAllBatches"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/item_batches"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phase2.batches.BatchesDetailActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_curve"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginStart="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/back"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/back"
+                android:text="title"
+                android:textColor="@color/white_light"
+                android:textSize="@dimen/_14ssp"
+                />
+
+
+            <ImageView
+                android:id="@+id/imgShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_white"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:scaleX="-1"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

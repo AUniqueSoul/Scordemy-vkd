@@ -1,0 +1,236 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Scordemy</string>
+
+
+    <!--    Login Register Screen   -->
+    <string name="sign_up_with_mobile">Sign Up With Mobile</string>
+    <string name="join_study_fi">Join Scordemy</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="i_have_referral_code">I have a referral code</string>
+    <string name="join_for_free">Join For Free</string>
+    <string name="i_have_an_ac">I have an account.</string>
+    <string name="login">Login</string>
+    <string name="paste_code">Paste Code</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="dont_have_an_ac">Don\'t have an Account? </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_otp">Enter Otp</string>
+    <string name="otp_sent_to_91">OTP sent to +91</string>
+    <string name="enter_6_digit_otp_here">Enter 6 digit OTP here</string>
+    <string name="continuee">Continue</string>
+    <string name="detecting_otp_60">Detecting OTP: 60</string>
+    <string name="send_code_again"><u>send code again</u>.</string>
+    <string name="back">back</string>
+
+    <!--    Home Screen  -->
+    <string name="store">Store</string>
+    <string name="feeds">Feeds</string>
+    <string name="batches">Batches</string>
+    <string name="test">Test</string>
+    <string name="home">Home</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="notifications">Notifications</string>
+    <string name="menu_notification">Notifications</string>
+    <string name="menu_wallet">Wallet</string>
+    <string name="ebooks">Ebooks</string>
+    <string name="share">Share this app</string>
+    <string name="about_us">About  Us</string>
+    <string name="secure_offline_videos">Secure Offline Videos</string>
+    <string name="contact_us">Contact Us</string>
+
+    <string name="logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="english_medium">English Medium</string>
+    <string name="assam_medium">Assam Medium</string>
+    <string name="classs">Class</string>
+    <string name="image">Image</string>
+    <string name="term_and_condition">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="refund_policy">Refund Policy</string>
+    <string name="cancellation_policy">Cancellation Policy</string>
+
+
+    <!--    Feeds Fragment   -->
+    <string name="blog">Blog</string>
+    <string name="videos">Videos</string>
+    <string name="news">News</string>
+    <string name="likes">Like(s)</string>
+    <string name="comments">Comment(s)</string>
+    <string name="views">View(s)</string>
+    <string name="continue_reading">Continue Reading +</string>
+    <string name="show_less">Show less - </string>
+
+
+    <!--    Video lecture fragment  -->
+    <string name="lecture">Lecture</string>
+    <string name="pdfs">1 PDFs</string>
+
+
+    <!--    Profile    -->
+    <string name="profile">Profile</string>
+    <string name="fill_up_your_details">Fill up Your Details and\n Secure your profile </string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="guardian_s_number">Guardian\'s \nNumber</string>
+    <string name="gender">Gender</string>
+    <string name="city">City</string>
+
+
+    <string-array name="gender">
+        <item>select gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="classes">
+        <item>select class</item>
+        <item>Class V</item>
+        <item>Class VI</item>
+        <item>Class VII</item>
+        <item>Class VIII</item>
+        <item>Class IX</item>
+        <item>Class X</item>
+        <item>Class XI</item>
+        <item>Class XII</item>
+    </string-array>
+
+
+    <string name="error_generic">Playback failed</string>
+    <string name="error_unrecognized_abr_algorithm">Unrecognized ABR algorithm</string>
+
+    <string name="error_unrecognized_stereo_mode">Unrecognized stereo mode</string>
+
+    <string name="error_drm_not_supported">Protected content not supported on API levels below 18</string>
+
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+
+    <string name="error_no_decoder">This device does not provide a decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_no_secure_decoder">This device does not provide a secure decoder for <xliff:g id="mime_type">%1$s</xliff:g></string>
+
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+
+    <string name="error_instantiating_decoder">Unable to instantiate decoder <xliff:g id="decoder_name">%1$s</xliff:g></string>
+
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+
+    <string name="track_selection_title">Select tracks</string>
+    <string name="save_continue"><![CDATA[Save & Continue]]></string>
+    <string name="comment_as">Comment as</string>
+    <string name="post">Post</string>
+
+
+    <!--    Quiz    -->
+    <string name="questions">Questions</string>
+    <string name="you_marked">You Marked</string>
+    <string name="solution">Solution</string>
+    <string name="you_missed">You missed</string>
+
+    <!--    wallet  -->
+    <string name="invite_msg">Earn up to 1000 points / friend \nwhen the invited friends \n make their first purchase</string>
+    <string name="complete_profile_msg">Fill in your basic information \nand earn 200 points</string>
+    <string name="my_scordemy_points">My Scordemy Points</string>
+    <string name="rupee">₹</string>
+    <string name="redeem_points">Redeem Points</string>
+    <string name="earn_scordemy_points">Earn Scordemy Points</string>
+    <string name="invite_start">Hi there, Signup using my code </string>
+    <string name="invite_end">and GET upto 1000 Points. Use points to unlock video , exercise &amp; Tests.</string>
+
+
+    <!--    Test     -->
+    <string name="test_series">Test Series</string>
+    <string name="take_tests_and">Take Tests and</string>
+    <string name="know_your_standings_in_the_race">know your standings in the race.</string>
+    <string name="todo">TODO</string>
+    <string name="tests">  Test(s)</string>
+    <string name="an_all_india_level_examination_for_admission_into">An all-India level examination for admission into</string>
+    <string name="india_s_best_medical_colleges">India\'s best medical colleges.</string>
+    <string name="string_india_s_best_medical_colleges" />
+    <string name="instructions_marks_and_duration">Instructions: Marks and Duration</string>
+    <string name="scholarship_test_for_neet">Scholarship Test for neet</string>
+    <string name="_1">1</string>
+    <string name="marks">Marks</string>
+    <string name="min">min</string>
+    <string name="test_s">Test(s)</string>
+    <string name="time">02:56:30</string>
+    <string name="progress_text">1 %</string>
+    <string name="pause_this_test">Pause this Test</string>
+    <string name="question_status">03 of 45</string>
+    <string name="english">English</string>
+    <string name="assamese">Assamese</string>
+    <string name="select_medium">Select Medium</string>
+    <string name="quiz">Quiz</string>
+    <string name="notes">Notes</string>
+    <string name="select_class">Select Class</string>
+    <string name="select_subject">Select Subject</string>
+    <string name="select_chapter">Select Chapter</string>
+    <string name="please_wait">please wait...</string>
+    <string name="live">Live</string>
+    <string name="submit">Submit</string>
+    <string name="previous">Prev</string>
+    <string name="next">Next</string>
+    <string name="select_ebook">Select Ebook</string>
+    <string name="confirm">Confirm</string>
+    <string name="premium">Premium</string>
+    <string name="choose_you_plan">Choose your plan to Unlock</string>
+    <string name="subscribe_now">Subscribe Now</string>
+    <string name="open_book">Open Book</string>
+    <string name="open">Open</string>
+    <string name="follow_us_on_social_media">Follow us on Social Media</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="telegram">Telegram</string>
+    <string name="teachers">Teachers</string>
+    <string name="mentors">Mentors</string>
+    <string name="live_videos">Live Videos</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="or">or</string>
+    <string name="start_test">Start Test</string>
+    <string name="instructions">Instructions</string>
+    <string name="duration">Duration</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="my_content">My Content</string>
+    <string name="explore_go">Explore</string>
+    <string name="select_home">select home content</string>
+    <string name="my_store">MY STORE</string>
+    <string name="coupon_applied">Coupon Applied</string>
+    <string name="days">Days</string>
+    <string name="subscribed">Subscribed</string>
+    <string name="paid">PREMIUM</string>
+    <string name="free">FREE</string>
+    <string name="youtube">Youtube</string>
+
+
+    <!--    batches  -->
+    <string name="search_batches">Search Batches</string>
+    <string name="my_batches">My Batches</string>
+    <string name="explore">Explore</string>
+    <string name="highly_recommended">Highly Recommended</string>
+    <string name="all_batches">All Batches</string>
+    <string name="this_batch_includes">This Batch includes</string>
+    <string name="top_faculties">Top Faculties</string>
+    <string name="schedules">Schedules</string>
+    <string name="description">Description</string>
+    <string name="weekly_schedule">Weekly Schedule</string>
+    <string name="all_classes">All Classes</string>
+    <string name="search_medium">Search Medium</string>
+    <string name="no_data_found">No Data Found</string>
+
+</resources>

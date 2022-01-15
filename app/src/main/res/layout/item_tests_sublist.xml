@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainLyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20sp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvFree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/btn_round_blue"
+                android:fontFamily="@font/avenir_next_demi"
+                android:paddingStart="@dimen/_14sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_14sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="@string/free"
+                android:textColor="@color/white_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_test_Detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Unit Test, PCB, 5 Part"
+                android:fontFamily="@font/poppins_medium" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@color/colorLightGray"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvMarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorGray"
+                    android:text="180 Marks"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins_light" />
+
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorGray"
+                    android:text="90 Mins"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins_light" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorGray" />
+
+                <TextView
+                    android:id="@+id/tvQuestions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorGray"
+                    android:text="45 Questions"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppins_light" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

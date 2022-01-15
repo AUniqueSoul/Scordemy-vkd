@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+
+
+
+        <item android:title="@string/my_content">
+            <menu>
+                <item
+                    android:id="@+id/nav_my_content"
+                    android:icon="@drawable/profile_icon"
+                    android:title="@string/my_content" />
+                <item
+                    android:id="@+id/nav_teachers"
+                    android:icon="@drawable/ic_teacher"
+                    android:title="@string/teachers" />
+
+                <item
+                    android:id="@+id/nav_wallet"
+                    android:icon="@drawable/ic_wallet"
+                    android:title="@string/menu_wallet" />
+
+                <item
+                    android:id="@+id/nav_notifications"
+                    android:icon="@drawable/ic_notification"
+                    android:title="@string/menu_notification" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="@string/logout" />
+            </menu>
+
+        </item>
+
+
+        <item android:title="Support">
+            <menu>
+                <item
+                    android:id="@+id/nav_share_app"
+                    android:icon="@drawable/ic_share"
+                    android:title="@string/share" />
+                <item
+                    android:id="@+id/nav_about_us"
+                    android:icon="@drawable/ic_about_us"
+                    android:title="@string/about_us" />
+                <item
+                    android:id="@+id/nav_contact_us"
+                    android:icon="@drawable/ic_contact_us"
+                    android:title="@string/contact_us" />
+            </menu>
+        </item>
+
+
+
+        <item android:title="@string/term_and_condition">
+            <menu>
+                <item
+                    android:id="@+id/nav_term_and_condition"
+                    android:icon="@drawable/ic_info"
+                    android:title="@string/term_and_condition" />
+
+                <item
+                    android:id="@+id/privacy_policy"
+                    android:icon="@drawable/ic_info"
+                    android:title="@string/privacy_policy" />
+
+                <item
+                    android:id="@+id/refund_policy"
+                    android:icon="@drawable/ic_info"
+                    android:title="@string/refund_policy" />
+
+                <item
+                    android:id="@+id/cancellation_policy"
+                    android:icon="@drawable/ic_info"
+                    android:title="@string/cancellation_policy" />
+
+            </menu>
+        </item>
+
+
+
+
+    </group>
+
+
+    <item android:title="@string/follow_us_on_social_media">
+        <menu>
+            <item
+                android:icon="@drawable/ic_instagram"
+                android:title="@string/instagram"
+                android:id="@+id/nav_instagram"/>
+            <item
+                android:icon="@drawable/ic_facebook"
+                android:title="@string/facebook"
+                android:id="@+id/nav_facebook"/>
+            <item
+                android:icon="@drawable/ic_youtube"
+                android:title="@string/youtube"
+                android:id="@+id/nav_youtube"/>
+        </menu>
+    </item>
+
+</menu>

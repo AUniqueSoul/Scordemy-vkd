@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:padding="10dp"
+        >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_scordemy"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/top_faculties"
+        android:layout_marginStart="10dp"
+        android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:id="@+id/bio"
+        android:layout_below="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/top_faculties"
+        android:layout_marginStart="10dp"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:id="@+id/view_more"
+        android:layout_below="@id/bio"
+        android:background="@drawable/bg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/top_faculties"
+        android:layout_marginStart="10dp"
+        android:textSize="@dimen/_10ssp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="15dp"
+        />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

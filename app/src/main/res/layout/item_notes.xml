@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp"
+    app:cardElevation="1sp"
+    app:cardCornerRadius="5dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_lock"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5sp"
+            android:visibility="visible"
+            android:id="@+id/lock"
+            android:layout_marginEnd="10sp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_download"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="5sp"
+            android:id="@+id/download"
+            android:layout_marginEnd="10sp"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_toStartOf="@+id/download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class cbse "
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/avenir_next_demi"
+            android:layout_margin="10sp"
+            />
+
+        <TextView
+            android:id="@+id/txt_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pdfs"
+            android:layout_below="@id/title"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginStart="10sp"
+            android:textSize="14sp"
+            />
+
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/number_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/NumberProgressBar_Beauty_Red"
+            android:layout_below="@id/txt_pdf"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1033900624630",
+    "firebase_url": "https://studyfi-e5732.firebaseio.com",
+    "project_id": "studyfi-e5732",
+    "storage_bucket": "studyfi-e5732.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033900624630:android:0b670c638c3f8e863d7ad7",
+        "android_client_info": {
+          "package_name": "com.laboontech.scordemy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033900624630-ip0pin75302b0no4ebnpvoeg9huf955l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzKnIUS2cvfkYNRcdSBc0m7-3LTOxH0Yg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033900624630-ip0pin75302b0no4ebnpvoeg9huf955l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

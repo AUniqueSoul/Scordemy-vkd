@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    android:foreground="?android:attr/selectableItemBackgroundBorderless"
+
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="20dp">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="-50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:background="@color/colorChapBack"
+        android:paddingTop="@dimen/_30sdp"
+        >
+
+        <TextView
+            android:id="@+id/tvChapterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mathematical concepts (Free)"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/_12ssp"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"
+            android:layout_toStartOf="@id/tvNumbering"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:padding="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@+id/tvChapterName"
+            android:layout_toStartOf="@+id/tvNumbering"
+            >
+            <TextView
+                android:id="@+id/tvVideosNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="@dimen/_10ssp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tvQuizNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="@dimen/_10ssp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tvConceptNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:fontFamily="@font/poppins_light"
+                android:textSize="@dimen/_10ssp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvNumbering"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_alignParentEnd="true"
+          android:layout_alignBaseline="@id/tvChapterName"
+            android:textSize="@dimen/_12ssp"
+            android:padding="15dp"
+            android:layout_marginEnd="5dp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:src="@drawable/scordemy_logo"
+    android:scaleType="fitCenter"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    />
+</RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

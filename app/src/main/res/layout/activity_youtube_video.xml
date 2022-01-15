@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical"
+    tools:context=".activities.YoutubeVideoActivity">
+
+
+    <FrameLayout
+        android:id="@+id/videolyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".35"
+            app:enableAutomaticInitialization="true"
+            app:handleNetworkEvents="true"
+            app:showFullScreenButton="true"
+            app:showYouTubeButton="false" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Mobile Number"
+            android:textColor="@color/red_btn_bg_color"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/chatlyt"
+        android:layout_below="@id/videolyt"
+        android:layoutAnimation="@anim/layout_animation"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:stackFromEnd="true"
+        tools:listitem="@layout/chat_message_item" />
+
+
+    <LinearLayout
+        android:id="@+id/chatlyt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="5dp"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/sendMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".85"
+            android:background="@null"
+            android:fontFamily="@font/poppins"
+            android:hint="Send Live Message"
+            android:isScrollContainer="true"
+            android:paddingLeft="@dimen/_5sdp"
+            android:scrollbars="vertical"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/colorLightGray"
+            android:textSize="@dimen/_12ssp" />
+
+        <ImageView
+            android:id="@+id/sentMessageNow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:padding="@dimen/_6sdp"
+            android:src="@drawable/ic_send"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

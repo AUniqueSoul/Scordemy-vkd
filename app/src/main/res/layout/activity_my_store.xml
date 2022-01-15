@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MyStoreActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15sp"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        android:id="@+id/back"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_store"
+        android:textColor="@color/color_white"
+        android:layout_marginStart="20dp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_semibold"
+        />
+
+
+
+
+</LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:background="@drawable/bg_curve" />
+
+            <ImageView
+                android:id="@+id/storeImg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30sp"
+                android:src="@drawable/ic_store"
+                app:tint="@color/colorWhite"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+            <LinearLayout
+                android:layout_below="@id/storeImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvTest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5sp"
+                    android:layout_margin="20sp"
+                    >
+                    <RelativeLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@android:color/transparent"
+                        >
+
+                        <TextView
+                            android:id="@+id/tvDuration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 Year"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="@dimen/_14ssp"
+                            android:padding="5dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/colorPrimary"
+                            />
+
+
+
+                        <TextView
+                            android:id="@+id/tvPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rupee"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textSize="@dimen/_14ssp"
+                            android:padding="5dp"
+                            android:textColor="@color/colorPrimary"
+                            />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5sp"
+                    android:layout_margin="20sp"
+                    >
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@android:color/transparent"
+                        >
+
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="title"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="@dimen/_14ssp"
+                            android:padding="5dp"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/colorPrimary"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvSchedule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="@dimen/_12ssp"
+                            android:padding="5dp"
+                            android:visibility="gone"
+                            android:layout_marginStart="10dp"
+                            android:textColor="@color/colorAccent"
+                            />
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progress_bar"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etApplyCoupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8ssp"
+                    android:background="@drawable/grey_bg_border"
+                    android:hint="Enter Coupon here"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:padding="@dimen/_8ssp" />
+
+                <TextView
+                    android:id="@+id/tvCouponApplied"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8ssp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="@string/coupon_applied"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tvApplyCoupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_8ssp"
+                    android:layout_marginTop="@dimen/_15ssp"
+                    android:background="@drawable/bg_button"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:text="@string/apply_coupon"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buy_now"
+                    android:background="@drawable/bg_button"
+                    android:id="@+id/buyNow"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
